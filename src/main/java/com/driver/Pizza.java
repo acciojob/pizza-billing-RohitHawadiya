@@ -14,12 +14,10 @@ public class Pizza {
 
     public int toppingPrice;
     public int totalPrice;
-    public Boolean isVeg;
     public String bill;
 
     public Pizza(Boolean isVeg){
-        this.isVeg=isVeg;
-        if(this.isVeg==true)
+        if(isVeg==true)
         {
             this.basePrice=300;
             this.toppingPrice=70;
